@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>National Park Searcher</h1>
+    <main id="container">
+        <form>
+            <fieldset>
+                <p>Enter the state to search for some national parks</p>
+                <input type="text" class="state-form" placeholder="Enter a state">   
+                <p>Number of Parks to review</p>
+                <input type="text" class="state-form" placeholder="Maximum of x, default 10 results">
+            </fieldset>
+            <input type="submit" class="value-parks" value="Submit">  
+        </form>
+
+        <section id="js-results-list">
+        </section>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
