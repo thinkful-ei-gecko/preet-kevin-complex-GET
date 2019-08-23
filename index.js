@@ -33,7 +33,7 @@ function getNationalParks(query, maxResults = 10){
     })
     .then(responseJson => displayResults(responseJson))
     .catch(error => {
-      console.log(error);
+      $('#js-results-list').html(error);
     });
 }
 
@@ -43,8 +43,8 @@ function userInputForm(){
     event.preventDefault();
     let searchState = $('.state-form').val();
     let maxResults = $('.number-form').val();
+    maxResults = maxResults ? maxResults : 1;
     getNationalParks(searchState, maxResults);
-    console.log(maxResults);
   });
 }
 
