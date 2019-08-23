@@ -13,7 +13,7 @@ function getNationalParks(query, maxResults = 10){
         stateCode: query,
         maxResults,
         language: 'en',
-        key: apiKey
+        //key: apiKey
     };
     //create string with original url and new params 
     const queryString = formatQueryParams(params)
